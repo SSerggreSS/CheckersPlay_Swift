@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="checkers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woodenPlank.png" translatesAutoresizingMaskIntoConstraints="NO" id="aLF-eV-Iak">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkerBoard.png" translatesAutoresizingMaskIntoConstraints="NO" id="vRM-6a-ayz">
+                                <rect key="frame" x="62" y="233" width="900" height="900"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0sU-Fz-h7i" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="246" y="323" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dBw-ff-Xgd" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="425" y="323" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kVs-0z-wJm" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="604" y="323" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5nW-xu-Exq" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="782" y="327" width="87" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1AL-qB-Akd" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="158" y="414" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3bk-RN-SBL" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="337" y="414" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFn-Qe-pFN" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="516" y="414" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OxX-Ba-XE9" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="694" y="418" width="87" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ivK-xZ-IBo" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="246" y="503" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Swe-kO-Xi8" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="425" y="503" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jYe-Qk-wnm" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="604" y="503" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FjG-hf-Gob" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="782" y="507" width="87" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="39T-Tp-VWd" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="157" y="596" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zKb-M7-bac" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="336" y="596" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y1f-hd-rGk" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="515" y="596" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cC9-jH-nvl" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="693" y="599" width="87" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kWL-I3-Kwr" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="245" y="687" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gim-oD-v56" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="424" y="687" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5CN-WH-UoF" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="603" y="687" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raf-ho-fnE" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="781" y="691" width="87" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hUT-Ga-Wlc" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="157" y="778" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LgX-8b-tfF" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="336" y="778" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="651-8u-n4A" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="515" y="778" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EPF-c2-3zb" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="693" y="779" width="87" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z7m-8T-Sxz" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="246" y="867" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yFs-Er-WJz" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="424" y="867" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9So-6K-uDo" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="603" y="867" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6NY-YA-V9y" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="780" y="868" width="87" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TDI-VD-Paf" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="159" y="957" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jyp-Mn-2lp" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="335" y="957" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="faK-gM-Sq1" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="514" y="957" width="88" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wnu-TY-pKc" customClass="BlackCell" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="691" y="957" width="87" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PMn-3V-9ta" customClass="CheckerBlack" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="259" y="334" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dXl-yH-7hf" customClass="CheckerBlack" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="437" y="334" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dLW-2E-cKG" customClass="CheckerBlack" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="616" y="334" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G00-FF-U9s" customClass="CheckerBlack" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="794" y="335" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2OZ-oJ-HTE" customClass="CheckerBlack" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="169" y="427" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZSr-u0-EHP" customClass="CheckerBlack" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="347" y="427" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uhi-eT-RVG" customClass="CheckerBlack" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="527" y="427" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xr2-is-Q5q" customClass="CheckerBlack" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="705" y="427" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eXZ-Bs-TQu" customClass="CheckerBlack" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="257" y="518" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LsA-JU-ObJ" customClass="CheckerBlack" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="435" y="518" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tOI-tw-sVO" customClass="CheckerBlack" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="616" y="518" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a23-QD-fmJ" customClass="CheckerBlack" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="793" y="518" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uvy-k2-smG" customClass="CheckerWhite" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="168" y="789" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jFp-So-FyJ" customClass="CheckerWhite" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="347" y="790" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gQT-Yg-0bb" customClass="CheckerWhite" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="527" y="789" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7dt-QX-dnv" customClass="CheckerWhite" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="703" y="789" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xdS-4j-TRq" customClass="CheckerWhite" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="258" y="879" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TwA-2h-wy4" customClass="CheckerWhite" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="436" y="879" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iqv-1i-mSS" customClass="CheckerWhite" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="616" y="879" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fB5-yk-fD7" customClass="CheckerWhite" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="793" y="879" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZFQ-Ux-q0Q" customClass="CheckerWhite" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="170" y="971" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jWo-uK-Owd" customClass="CheckerWhite" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="346" y="971" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLM-cH-lqS" customClass="CheckerWhite" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="524" y="971" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="auj-o1-wSn" customClass="CheckerWhite" customModule="checkers" customModuleProvider="target">
+                                <rect key="frame" x="701" y="971" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aLF-eV-Iak" secondAttribute="bottom" id="DLe-lz-Uez"/>
+                            <constraint firstItem="aLF-eV-Iak" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MPy-cM-KO7"/>
+                            <constraint firstItem="aLF-eV-Iak" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f4e-so-1fO"/>
+                            <constraint firstItem="aLF-eV-Iak" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kS7-8q-KOQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="checkerBoard" destination="vRM-6a-ayz" id="UkQ-FE-Elg"/>
+                        <outlet property="woodenPlank" destination="aLF-eV-Iak" id="fG2-xk-7iG"/>
+                        <outletCollection property="checkersBlack" destination="PMn-3V-9ta" collectionClass="NSMutableArray" id="Kcz-mo-xbh"/>
+                        <outletCollection property="checkersBlack" destination="dXl-yH-7hf" collectionClass="NSMutableArray" id="SE3-N0-UDa"/>
+                        <outletCollection property="checkersBlack" destination="dLW-2E-cKG" collectionClass="NSMutableArray" id="4ui-vn-RhB"/>
+                        <outletCollection property="checkersBlack" destination="G00-FF-U9s" collectionClass="NSMutableArray" id="ATC-BV-Q7J"/>
+                        <outletCollection property="checkersBlack" destination="2OZ-oJ-HTE" collectionClass="NSMutableArray" id="sE0-hL-ari"/>
+                        <outletCollection property="checkersBlack" destination="ZSr-u0-EHP" collectionClass="NSMutableArray" id="4LM-Wg-a04"/>
+                        <outletCollection property="checkersBlack" destination="uhi-eT-RVG" collectionClass="NSMutableArray" id="4gZ-Jm-COr"/>
+                        <outletCollection property="checkersBlack" destination="xr2-is-Q5q" collectionClass="NSMutableArray" id="0sV-zx-dYB"/>
+                        <outletCollection property="checkersBlack" destination="eXZ-Bs-TQu" collectionClass="NSMutableArray" id="Wdn-mf-Xae"/>
+                        <outletCollection property="checkersBlack" destination="LsA-JU-ObJ" collectionClass="NSMutableArray" id="R39-fh-mB7"/>
+                        <outletCollection property="checkersBlack" destination="tOI-tw-sVO" collectionClass="NSMutableArray" id="Cx8-f8-C56"/>
+                        <outletCollection property="checkersBlack" destination="a23-QD-fmJ" collectionClass="NSMutableArray" id="oYb-dV-QpB"/>
+                        <outletCollection property="checkersWhite" destination="uvy-k2-smG" collectionClass="NSMutableArray" id="TBZ-zG-Gar"/>
+                        <outletCollection property="checkersWhite" destination="jFp-So-FyJ" collectionClass="NSMutableArray" id="YjH-6T-pA8"/>
+                        <outletCollection property="checkersWhite" destination="gQT-Yg-0bb" collectionClass="NSMutableArray" id="gu8-A1-WkN"/>
+                        <outletCollection property="checkersWhite" destination="7dt-QX-dnv" collectionClass="NSMutableArray" id="8i7-SF-AAf"/>
+                        <outletCollection property="checkersWhite" destination="xdS-4j-TRq" collectionClass="NSMutableArray" id="gcY-b3-soR"/>
+                        <outletCollection property="checkersWhite" destination="TwA-2h-wy4" collectionClass="NSMutableArray" id="3XN-VZ-0cG"/>
+                        <outletCollection property="checkersWhite" destination="iqv-1i-mSS" collectionClass="NSMutableArray" id="Lr9-zh-Gbf"/>
+                        <outletCollection property="checkersWhite" destination="fB5-yk-fD7" collectionClass="NSMutableArray" id="637-OI-kO8"/>
+                        <outletCollection property="checkersWhite" destination="ZFQ-Ux-q0Q" collectionClass="NSMutableArray" id="k2D-Ie-ZWe"/>
+                        <outletCollection property="checkersWhite" destination="jWo-uK-Owd" collectionClass="NSMutableArray" id="IHk-Qk-GPD"/>
+                        <outletCollection property="checkersWhite" destination="lLM-cH-lqS" collectionClass="NSMutableArray" id="H8c-ax-xFt"/>
+                        <outletCollection property="checkersWhite" destination="auj-o1-wSn" collectionClass="NSMutableArray" id="BgX-Be-Gd3"/>
+                        <outletCollection property="blackCells" destination="0sU-Fz-h7i" collectionClass="NSMutableArray" id="679-Df-fj5"/>
+                        <outletCollection property="blackCells" destination="dBw-ff-Xgd" collectionClass="NSMutableArray" id="oSl-J1-Qay"/>
+                        <outletCollection property="blackCells" destination="kVs-0z-wJm" collectionClass="NSMutableArray" id="bNd-yZ-35I"/>
+                        <outletCollection property="blackCells" destination="5nW-xu-Exq" collectionClass="NSMutableArray" id="Gy6-fR-ND4"/>
+                        <outletCollection property="blackCells" destination="1AL-qB-Akd" collectionClass="NSMutableArray" id="Ruc-mf-CKS"/>
+                        <outletCollection property="blackCells" destination="3bk-RN-SBL" collectionClass="NSMutableArray" id="rOi-z0-8C9"/>
+                        <outletCollection property="blackCells" destination="tFn-Qe-pFN" collectionClass="NSMutableArray" id="BV4-75-Tdg"/>
+                        <outletCollection property="blackCells" destination="OxX-Ba-XE9" collectionClass="NSMutableArray" id="e4M-Bc-DPN"/>
+                        <outletCollection property="blackCells" destination="ivK-xZ-IBo" collectionClass="NSMutableArray" id="hYa-Ab-KFn"/>
+                        <outletCollection property="blackCells" destination="Swe-kO-Xi8" collectionClass="NSMutableArray" id="68M-6T-ffM"/>
+                        <outletCollection property="blackCells" destination="jYe-Qk-wnm" collectionClass="NSMutableArray" id="Dvp-Od-syl"/>
+                        <outletCollection property="blackCells" destination="FjG-hf-Gob" collectionClass="NSMutableArray" id="mUY-sG-rY4"/>
+                        <outletCollection property="blackCells" destination="39T-Tp-VWd" collectionClass="NSMutableArray" id="fuH-RH-ciZ"/>
+                        <outletCollection property="blackCells" destination="zKb-M7-bac" collectionClass="NSMutableArray" id="1cH-U0-cu6"/>
+                        <outletCollection property="blackCells" destination="y1f-hd-rGk" collectionClass="NSMutableArray" id="XNh-Hu-Y7c"/>
+                        <outletCollection property="blackCells" destination="cC9-jH-nvl" collectionClass="NSMutableArray" id="vy2-H8-Dhf"/>
+                        <outletCollection property="blackCells" destination="kWL-I3-Kwr" collectionClass="NSMutableArray" id="WEB-hM-wBQ"/>
+                        <outletCollection property="blackCells" destination="Gim-oD-v56" collectionClass="NSMutableArray" id="PuS-Ko-DFT"/>
+                        <outletCollection property="blackCells" destination="5CN-WH-UoF" collectionClass="NSMutableArray" id="Bps-bl-wks"/>
+                        <outletCollection property="blackCells" destination="raf-ho-fnE" collectionClass="NSMutableArray" id="56d-pj-APf"/>
+                        <outletCollection property="blackCells" destination="hUT-Ga-Wlc" collectionClass="NSMutableArray" id="5bw-ML-02g"/>
+                        <outletCollection property="blackCells" destination="LgX-8b-tfF" collectionClass="NSMutableArray" id="g49-Me-KJr"/>
+                        <outletCollection property="blackCells" destination="651-8u-n4A" collectionClass="NSMutableArray" id="vTt-v7-oT8"/>
+                        <outletCollection property="blackCells" destination="EPF-c2-3zb" collectionClass="NSMutableArray" id="yeT-jT-6z8"/>
+                        <outletCollection property="blackCells" destination="z7m-8T-Sxz" collectionClass="NSMutableArray" id="b2H-pU-w0I"/>
+                        <outletCollection property="blackCells" destination="yFs-Er-WJz" collectionClass="NSMutableArray" id="DZ5-dn-iz9"/>
+                        <outletCollection property="blackCells" destination="9So-6K-uDo" collectionClass="NSMutableArray" id="bE7-Cm-A3n"/>
+                        <outletCollection property="blackCells" destination="6NY-YA-V9y" collectionClass="NSMutableArray" id="f5P-D7-etT"/>
+                        <outletCollection property="blackCells" destination="TDI-VD-Paf" collectionClass="NSMutableArray" id="tGp-rg-QCv"/>
+                        <outletCollection property="blackCells" destination="jyp-Mn-2lp" collectionClass="NSMutableArray" id="UYB-xp-i5o"/>
+                        <outletCollection property="blackCells" destination="faK-gM-Sq1" collectionClass="NSMutableArray" id="KTf-72-PP9"/>
+                        <outletCollection property="blackCells" destination="wnu-TY-pKc" collectionClass="NSMutableArray" id="aqG-Eu-7PU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.296874999999996" y="-104.97803806734991"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkerBoard.png" width="1374" height="1396"/>
+        <image name="woodenPlank.png" width="3840" height="2560"/>
+    </resources>
+</document>
